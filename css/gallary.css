@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Homemade+Apple&display=swap');*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+#container{
+    padding: 2vw;
+    width: 100vw;
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: grey;
+    align-content: start;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+h1{
+    background-image: linear-gradient( #7186e6 25%, #86fde8 100%);
+     -webkit-background-clip: text;
+   color: transparent;
+    font-family: 'Charmonman', cursive;
+    font-size: 8vw;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2vw;
+    transition: transform 0.2s;
+}
+img:hover{
+    transform: scale(1.05) rotate(5deg);
+}
+#bigImg{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+#disImage{
+   width: 50vw;
+   height: 30vw;
+   background-image: url(../Asset/images/img\ \(11\).jpg);
+   background-size: 100%;
+   border-radius: 1vw;
+   box-shadow: 10px 10px 20px;
+}
+#close{
+  font-size: 3vw;
+  position: fixed;
+  top: 3vw;
+  right: 3vw;
+  cursor: pointer;
+  text-shadow: 0px 0px 2px white,0px 0px 10px white,0px 0px 15px rgb(25, 174, 184);
+}
+#close2{
+  font-size: 2vw;
+  position: fixed;
+  top: 1.5vw;
+  right: 1.5vw;
+  cursor: pointer;
+  text-shadow: 0px 0px 2px white,0px 0px 10px white,0px 0px 15px rgb(25, 174, 184);
+  z-index: 17;
+}
+#edit{
+ width: 10vw;
+ font-size: 1.4vw;
+ height: 2.5vw;
+ border: none;
+ outline: none;
+ border-radius: 1.5vw;
+ box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.686),inset 0.1px 0.5px 1px  black;
+ background-color: white;
+ transition: transform 0.2s,font-size 0.2s;
+ font-family: 'Homemade Apple', cursive;
+ letter-spacing: 0.5vw;
+ font-weight: bold;
+}
+#edit:hover{
+    transform: scale(1.05);
+    font-size: 1.5vw;
+}
+#editContainer{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #155263;
+    display: none;
+    z-index: 16;
+}
+#imgCon{
+    width: 60%;
+    height: 80%;
+    background-image: url(../Asset/images/img\ \(11\).jpg);
+    background-size: 100% 100%;
+    position:absolute;
+    top: 10%;
+    right: 30%;
+    box-shadow: 10px 10px 10px black;
+}
+#toolCon{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    background-color: #347474;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    /* column-gap: 100px; */
+    justify-content:start;
+}
+#filterList,#transform,#blend{
+    list-style: none;
+    font-size: 21px;
+    color: #ff6f3c;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px black;
+    margin: 2vw;
+    letter-spacing: 2px;
+    
+}
+.slist{
+    font-size: 16px;
+    list-style: none;
+    width: 210%;
+    height: 40px;
+    background-color: #155263;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+    z-index: 16;
+    transition: transform 0.3s;
+    border: 2px solid #347474;
+    border-radius: 0.5vw;
+}
+.slist:hover{
+    transform: translate(-40%);
+    background-color:#ff6f3c;
+    color: black;
+}
+.Bslist{
+    border-radius: 0.5vw;
+    width: 100%;
+}
+.Bslist:hover{
+    background-color: black;
+    color: white;
+    transform: translate(0px);
+}
+#sublist{
+    display: none;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#sublistFilter,#sublistTransform,#sublistBlend{
+    width: 100%;
+    height: 50px;
+    background-color:#347474;
+    text-align: center;
+    cursor: pointer;
+    padding-top:50px ;
+}
+#sublistFilter:hover #sublist{
+    display: block;
+}
+#sublistTransform:hover #sublist{
+    display: block;
+}
+#sublistBlend:hover #sublist{
+    display: block;
+}
+.range{
+    appearance: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0,0, 0.5),
+    inset 5px 5px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.range::-webkit-slider-thumb{
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid rgb(5, 82, 113);
+    box-shadow: -20.45vw 0 0 20vw #155263;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background:#7186e6;
+    border-radius: 10px;
+}
+
+
