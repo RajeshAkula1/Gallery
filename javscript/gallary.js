@@ -19,18 +19,18 @@ function openImage(imgSrc)
 function editImage(){
     document.getElementById("editContainer").style.display="block"
     document.getElementById("imgCon").style.backgroundImage=`url("${sourceImg}")`
-}
-function changeValue(){
-    // document.getElementById("imgCon").style.filter="blur(10px)"
-    var blu=document.getElementById("blur").value;
-    var bright=document.getElementById("brightness").value;
-    var cont=document.getElementById("contrast").value;
-    var grays=document.getElementById("grayscale").value;
-    var inv=document.getElementById("invert").value;
-    var opa=document.getElementById("opacity").value;
-    var sat=document.getElementById("saturate").value;
-    var sep=document.getElementById("sepia").value;
-    var huer=document.getElementById("hue-rotate").value;
+} 
+var allInp=document.querySelectorAll(".range")
+function changeValue(blendVal){
+    var blu=allInp[0].value;
+    var bright=allInp[1].value;
+    var cont=allInp[2].value;
+    var grays=allInp[3].value;
+    var inv=allInp[4].value;
+    var opa=allInp[5].value;
+    var sat=allInp[6].value;
+    var sep=allInp[7].value;
+    var huer=allInp[8].value;
     document.getElementById("imgCon").style.filter=`blur(${blu}px) 
     brightness(${bright}%) 
     saturate(${sat}%) 
@@ -40,8 +40,23 @@ function changeValue(){
     hue-rotate(${huer}deg) 
     opacity(${opa}%) 
     grayscale(${grays}%)`
+    var rotX=allInp[9].value;
+    var rotY=allInp[10].value;
+    var rotZ=allInp[11].value;
+    var scaX=allInp[12].value;
+    var scaY=allInp[13].value;
+    var skeX=allInp[14].value;
+    var skeY=allInp[15].value;
+    var transX=allInp[16].value;
+    var transY=allInp[17].value;
+    document.getElementById("imgCon").style.transform=`rotateX(${rotX}deg)
+    rotateY(${rotY}deg) 
+    rotate(${rotZ}deg)
+    scaleX(${scaX})
+    scaleY(${scaY})
+    skewX(${skeX}deg)
+    skewY(${skeY}deg)
+    translateX(${transX}px)
+    translateY(${transY}px)`
+    document.getElementById("imgCon").style.mixBlendMode=`${blendVal}`
 }
-// function trasformValue()
-// {
-//     var 
-// }
