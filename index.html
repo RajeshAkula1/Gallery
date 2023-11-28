@@ -39,51 +39,51 @@
             <ul id="filterList">
                 <li id="sublistFilter">Filter Property
                     <ul id="sublist">
-                        <li class="slist first">Blur <input min="0" max="100" value="0" type="range" class="range" id="blur" oninput="changeValue()"></li>
-                        <li class="slist">Brightness <input min="0" max="500" value="100" type="range" class="range" id="brightness" oninput="changeValue()"></li>
-                        <li class="slist">Contrast <input min="0" max="100" value="100" type="range" class="range" id="contrast" oninput="changeValue()"></li>
-                        <li class="slist">GrayScale <input min="0" max="100" value="0" type="range" class="range" id="grayscale" oninput="changeValue()"></li>
-                        <li class="slist">Invert <input min="0" max="100" value="0" type="range" class="range" id="invert" oninput="changeValue()"></li>
-                        <li class="slist">Opacity <input min="0" max="100" value="100" type="range" class="range" id="opacity" oninput="changeValue()"></li>
-                        <li class="slist">Saturate <input min="0" max="500" value="100" type="range" class="range" id="saturate" oninput="changeValue()"></li>
-                        <li class="slist">Sepia <input min="0" max="100" value="0" type="range" class="range" id="sepia" oninput="changeValue()"></li>
-                        <li class="slist last" id="last">Hue-Rotate <input min="0" max="360" value="0" type="range" class="range" id="hue-rotate" oninput="changeValue()"></li>
+                        <li class="slist">Blur <input min="0" max="100" value="0" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Brightness <input min="0" max="500" value="100" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Contrast <input min="0" max="100" value="100" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">GrayScale <input min="0" max="100" value="0" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Invert <input min="0" max="100" value="0" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Opacity <input min="0" max="100" value="100" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Saturate <input min="0" max="500" value="100" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Sepia <input min="0" max="100" value="0" type="range" class="range"  oninput="changeValue()"></li>
+                        <li class="slist">Hue-Rotate <input min="0" max="360" value="0" type="range" class="range" oninput="changeValue()"></li>
                     </ul>
                 </li>
             </ul>
             <ul id="transform">
                 <li id="sublistTransform"> <span class="head">Transform Property</span>
                     <ul id="sublist">
-                        <li class="slist first">RotateX<input type="range" min="-360deg" max="360" value="0" class="range" id="RotateX"></li>
-                        <li class="slist">RotateY<input min="-360deg" max="360" value="0" type="range" class="range"></li>
-                        <li class="slist">RotateZ<input min="-360deg" max="360" value="0" type="range" class="range"></li>
-                        <li class="slist">ScaleX<input min="0" max="50" value="1" type="range" class="range"></li>
-                        <li class="slist">ScaleY<input min="0" max="50" value="1" type="range" class="range"></li>
-                        <li class="slist">SkewX <input min="-360deg" max="360" value="0" type="range" class="range"></li>
-                        <li class="slist">SkewY <input min="-360deg" max="360" value="0" type="range" class="range"></li>
-                        <li class="slist">TranslateX <input min="-500" max="500" value="0" type="range" class="range"></li>
-                        <li class="slist last">TranslateY <input min="-500" max="500" value="0" type="range" class="range"></li>
+                        <li class="slist">RotateX<input type="range" min="-360deg" max="360" value="0" class="range" id="RotateX" oninput="changeValue()"></li>
+                        <li class="slist">RotateY<input min="-360deg" max="360" value="0" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">RotateZ<input min="-360deg" max="360" value="0" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">ScaleX<input min="0" max="50" value="1" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">ScaleY<input min="0" max="50" value="1" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">SkewX <input min="-360deg" max="360" value="0" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">SkewY <input min="-360deg" max="360" value="0" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">TranslateX <input min="-500" max="500" value="0" type="range" class="range" oninput="changeValue()"></li>
+                        <li class="slist">TranslateY <input min="-500" max="500" value="0" type="range" class="range" oninput="changeValue()"></li>
                     </ul>
                 </li>
             </ul>
             <ul id="blend">
                 <li id="sublistBlend"> <span class="head">Blend</span>
                     <ul id="sublist">
-                        <li class="slist Bslist first">Color-Burn</li>
-                        <li class="slist Bslist">Color-Dodge</li>
-                        <li class="slist Bslist">Darken</li>
-                        <li class="slist Bslist">Difference </li>
-                        <li class="slist Bslist">Exclusion</li>
-                        <li class="slist Bslist">Hard-Light</li>
-                        <li class="slist Bslist">Hue</li>
-                        <li class="slist Bslist">Lighten</li>
-                        <li class="slist Bslist">Luminosity</li>
-                        <li class="slist Bslist">Mutiply</li>
-                        <li class="slist Bslist">Color</li>
-                        <li class="slist Bslist">Overlay</li>
-                        <li class="slist Bslist">Saturation</li>
-                        <li class="slist Bslist">Screen</li>
-                        <li class="slist Bslist last">SoftLight</li>
+                        <li class="slist Bslist" onclick="changeValue('color-burn')">Color-Burn </li>
+                        <li class="slist Bslist" onclick="changeValue('color-dodge')">Color-Dodge</li>
+                        <li class="slist Bslist" onclick="changeValue('darken')">Darken     </li>
+                        <li class="slist Bslist" onclick="changeValue('difference')">Difference </li>
+                        <li class="slist Bslist" onclick="changeValue('exclusion')">Exclusion  </li>
+                        <li class="slist Bslist" onclick="changeValue('hard-light')">Hard-Light </li>
+                        <li class="slist Bslist" onclick="changeValue('hue')">Hue</li>
+                        <li class="slist Bslist" onclick="changeValue('lighten')">Lighten</li>
+                        <li class="slist Bslist" onclick="changeValue('luminosity')">Luminosity</li>
+                        <li class="slist Bslist" onclick="changeValue('multiply')">Mutiply</li>
+                        <li class="slist Bslist" onclick="changeValue('color')">Color</li>
+                        <li class="slist Bslist" onclick="changeValue('overlay')">Overlay</li>
+                        <li class="slist Bslist" onclick="changeValue('saturation')">Saturation</li>
+                        <li class="slist Bslist" onclick="changeValue('screen')">Screen</li>
+                        <li class="slist Bslist" onclick="changeValue('soft-light')">SoftLight</li>
                     </ul>
                 </li>
             </ul>
